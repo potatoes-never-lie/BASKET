@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="509dp"
+        android:layout_height="625dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="검색어를 입력하세요." />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="322dp"
+            android:divider="#999999"
+            android:dividerHeight="1dp">
+
+        </ListView>
+
+        <EditText
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="장바구니" />
+
+        <ListView
+            android:id="@+id/cart_list"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:layout_above="@id/linear"
+            android:layout_alignParentTop="true"
+            android:divider="@null"></ListView>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="삭제하기" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
